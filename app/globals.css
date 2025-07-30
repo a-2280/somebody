@@ -28,3 +28,7 @@ li,
 button {
   cursor: pointer;
 }
+
+.text-blur {
+  @apply hover:blur-[1.5px] transition-all duration-200;
+}

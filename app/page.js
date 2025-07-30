@@ -1,62 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { useState } from "react";
-
-function CorruptText({ children, className = "" }) {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const scrambleText = (textInput) => {
-    if (typeof textInput !== "string" && typeof textInput !== "number") {
-      return textInput;
-    }
-    const text = String(textInput);
-
-    if (!text) return "";
-
-    const wordsAndSpaces = text.split(/(\s+)/);
-
-    const scrambledParts = wordsAndSpaces.map((part) => {
-      if (part.match(/^\s+$/)) {
-        return part;
-      }
-
-      const originalCases = part
-        .split("")
-        .map((char) => char === char.toUpperCase());
-
-      const characters = part.split("");
-
-      for (let i = characters.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [characters[i], characters[j]] = [characters[j], characters[i]];
-      }
-
-      let scrambledWord = "";
-      for (let i = 0; i < characters.length; i++) {
-        let char = characters[i];
-        if (originalCases[i]) {
-          scrambledWord += char.toUpperCase();
-        } else {
-          scrambledWord += char.toLowerCase();
-        }
-      }
-      return scrambledWord;
-    });
-
-    return scrambledParts.join("");
-  };
-
-  return (
-    <span
-      className={className}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      {isHovered ? scrambleText(children) : children}
-    </span>
-  );
-}
 
 export default function Home() {
   return (
@@ -64,22 +6,20 @@ export default function Home() {
       <div className="h-1/4 w-screen p-4 flex justify-start items-end">
         <div className="flex flex-col gap-4">
           <div className="cursor-default">
-            <h1>
-              <CorruptText>Calvin Williams</CorruptText>
-            </h1>
+            <h1>Calvin Williams</h1>
             <h2>Web Developer</h2>
           </div>
           <ul className="flex gap-8">
-            <li>
+            <li className="text-blur">
               <Link href={"/home"}>Home</Link>
             </li>
-            <li>
+            <li className="text-blur">
               <Link href={"/about"}>About</Link>
             </li>
-            <li>
+            <li className="text-blur">
               <Link href={"/Contact"}>Contact</Link>
             </li>
-            <li>
+            <li className="text-blur">
               <Link href={"/Guests"}>Guests</Link>
             </li>
           </ul>
