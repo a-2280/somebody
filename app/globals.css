@@ -14,9 +14,22 @@
 }
 
 :root {
+  /* Current active colors */
   --background: #f6f8fa;
   --default: #24292f;
   --light: #8c959f;
+  
+  /* Color palette for future use */
+  --palette-dark-gray: #202124;
+  --palette-red: #EA4335;
+  --palette-green: #34A853;
+  --palette-yellow: #FBBC04;
+  --palette-blue: #4285F4;
+  --palette-purple: #A142F4;
+  --palette-cyan: #24C1E0;
+  --palette-light-gray: #E8EAED;
+  --palette-medium-gray: #5F6368;
+  --palette-white: #FFFFFF;
 }
 
 body {
@@ -30,5 +43,5 @@ button {
 }
 
 .text-blur {
-  @apply hover:blur-[1.5px] transition-all duration-200;
+  @apply hover:blur-[1px] transition-all duration-200;
 }
