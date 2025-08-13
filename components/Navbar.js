@@ -1,12 +1,12 @@
 export default function Navbar() {
   return (
     <header>
-      <nav>
-        <a href="/">
+      <nav className="flex flex-col gap-3">
+        <a href="/" className="flex flex-col">
           <span>Calvin Williams</span>
-          <span>Web Developer</span>
+          <span className="text-grey">Web Developer</span>
         </a>
-        <ul>
+        <ul className="flex gap-4">
           <li>
             <a href="/">Home</a>
           </li>
