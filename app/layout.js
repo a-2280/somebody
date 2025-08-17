@@ -12,9 +12,9 @@ export default function RootLayout({ children }) {
       lang="en"
       className="h-screen w-screen flex justify-center items-center"
     >
-      <body className="flex flex-col gap-14 p-8 h-1/2 w-full">
+      <body className="h-1/2 w-full flex flex-col justify-start items-start gap-8 p-8">
         <Navbar />
-        <main>{children}</main>
+        <main className="w-full">{children}</main>
       </body>
     </html>
   );

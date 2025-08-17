@@ -5,8 +5,19 @@
   --color-black: #000000;
   --color-grey: #767676;
   --color-red: #ff6480;
+  --color-blue: #6d93bb;
 }
 
 html {
   @apply bg-white text-black;
+}
+
+input,
+textarea {
+  @apply border border-grey focus:outline-black pl-2;
+}
+
+form.submitted input:invalid,
+form.submitted textarea:invalid {
+  @apply outline-red border-red placeholder:text-red;
 }

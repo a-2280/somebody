@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <header>
+    <header className="w-full">
       <nav className="flex flex-col gap-3">
         <a href="/" className="flex flex-col">
           <span>Calvin Williams</span>
