@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 
 export default function Form() {
   return (
-    <form className="flex flex-col gap-2" id="form">
+    <form className="flex flex-col gap-2" id="form" netlify>
       <div className="flex flex-col gap-2">
         <label htmlFor="contact">Contact (email or phone):</label>
         <input type="text" id="contact" name="contact" required />
