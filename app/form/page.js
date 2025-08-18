@@ -9,8 +9,9 @@ export default function Form() {
       method="POST"
       id="form"
       name="contact"
-      netlify
+      data-netlify="true"
     >
+      <input type="hidden" name="form-name" value="contact" />
       <div className="flex flex-col gap-2">
         <label htmlFor="contact">Contact (email or phone):</label>
         <input type="text" id="contact" name="contact" required />
