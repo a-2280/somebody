@@ -1,8 +1,8 @@
 export default function Button({ text }) {
   function handleClick(e) {
     const form = document.getElementById("form");
-    const input = document.querySelector("input");
-    const textarea = document.querySelector("textarea");
+    const input = document.getElementById("contact");
+    const textarea = document.getElementById("message");
 
     // Check if form is valid before proceeding
     if (input.value.trim() && textarea.value.trim()) {
