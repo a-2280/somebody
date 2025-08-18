@@ -14,7 +14,7 @@ html {
 
 input,
 textarea {
-  @apply border border-grey focus:outline-black pl-2;
+  @apply border border-grey focus:outline-black px-2 py-1;
 }
 
 form.submitted input:invalid,

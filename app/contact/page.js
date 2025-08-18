@@ -1,11 +1,13 @@
+import Link from "next/link";
+
 export default function Contact() {
   return (
-    <ul className="gap-4">
+    <ul>
       <li>
-        <a href="/form">Message</a>
+        <Link href="/form">Message</Link>
       </li>
       <li>
-        <a href="https://www.instagram.com/somebody.online/">Instagram</a>
+        <Link href="https://www.instagram.com/somebody.online/">Instagram</Link>
       </li>
     </ul>
   );
