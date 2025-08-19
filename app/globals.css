@@ -21,3 +21,11 @@ form.submitted input:invalid,
 form.submitted textarea:invalid {
   @apply outline-red border-red placeholder:text-red;
 }
+
+form {
+  @apply mb-8;
+}
+
+li {
+  @apply hover:blur-[1px] w-fit;
+}

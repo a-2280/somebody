@@ -5,8 +5,8 @@ export default function Navbar() {
     <header className="w-full">
       <nav className="flex flex-col gap-3">
         <Link href="/" className="flex flex-col">
-          <span>Calvin Williams</span>
-          <span className="text-grey">Web Developer</span>
+          <span className="hover:blur-[1px]">Calvin Williams</span>
+          <span className="text-grey hover:blur-[1px]">Web Developer</span>
         </Link>
         <ul className="flex gap-4">
           <li>
