@@ -24,7 +24,7 @@ export default function Preview() {
       </li>
       <li className="!w-full hover:!blur-[0px] lg:flex lg:justify-between relative">
         <div className="group w-fit">
-          <a href="https://www.humanmend.com/" className="flex flex-col group">
+          <a href="https://lilyballif.com/" className="flex flex-col group">
             <span className="lg:group-hover:hidden">Lily Ballif - 2024</span>
             <span className="text-grey lg:hidden lg:group-hover:inline">
               <span className="lg:group-hover:blur-[1px]">Designed by </span>
