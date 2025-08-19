@@ -1,0 +1,29 @@
+# Netlify configuration file
+# This tells Netlify how to build and deploy your Next.js app
+
+[build]
+  # Command to run when building your site
+  command = "npm run build"
+  
+  # Directory where the built files will be located
+  # For Next.js static export, this is the 'out' folder
+  publish = "out"
+
+[build.environment]
+  # Use Node.js version 18 (stable and compatible with Next.js 15)
+  NODE_VERSION = "18"
+
+# Handle client-side routing for your Next.js app
+# This makes sure all page routes work properly
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Form processing settings
+# These ensure Netlify can detect and process your contact form
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true

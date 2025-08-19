@@ -7,7 +7,7 @@ export default function Form() {
     <form
       className="flex flex-col gap-2"
       method="POST"
-      action="/"
+      action="/form"
       id="form"
       name="contact"
       data-netlify="true"
