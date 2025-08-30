@@ -6,6 +6,7 @@
   --color-grey: #767676;
   --color-red: #ff6480;
   --color-blue: #6d93bb;
+  --color-green: #22c55e;
 }
 
 html {
@@ -28,4 +29,12 @@ form {
 
 li {
   @apply hover:blur-[1px] w-fit;
+}
+
+.active {
+  @apply text-black;
+}
+
+video {
+  @apply drop-shadow-xl;
 }

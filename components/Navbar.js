@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NavbarLinks from "./NavbarLinks";
 
 export default function Navbar() {
   return (
@@ -8,17 +9,7 @@ export default function Navbar() {
           <span className="hover:blur-[1px]">Calvin Williams</span>
           <span className="text-grey hover:blur-[1px]">Web Developer</span>
         </Link>
-        <ul className="flex gap-4">
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-        </ul>
+        <NavbarLinks />
       </nav>
     </header>
   );
