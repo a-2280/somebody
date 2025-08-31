@@ -28,7 +28,7 @@ export default function Form() {
     return (
       <div className="flex flex-col items-center gap-4 py-8">
         <div className="text-green text-xl">✓ Message sent!</div>
-        <div className="text-grey">Thanks for reaching out. I'll get back to you soon.</div>
+        <div className="text-grey">Thanks for reaching out. I&apos;ll get back to you soon.</div>
       </div>
     );
   }
@@ -41,14 +41,17 @@ export default function Form() {
       id="form"
       name="contact"
       data-netlify="true"
-      onSubmit={handleSubmit}
+      onSubmit={(e) => {
+        e.preventDefault();
+        handleSubmit();
+      }}
     >
       <input type="hidden" name="form-name" value="contact" />
-      <div className="flex flex-col gap-2 md:max-w-1/2">
+      <div className="flex flex-col gap-2 md:max-w-[50%]">
         <label htmlFor="contact">Contact (email or phone):</label>
         <input type="text" id="contact" name="contact" required />
       </div>
-      <div className="flex flex-col gap-2 md:max-w-1/2">
+      <div className="flex flex-col gap-2 md:max-w-[50%]">
         <label htmlFor="message">Message:</label>
         <textarea id="message" name="message" className="h-[100px]" required />
       </div>
