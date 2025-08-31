@@ -9,11 +9,11 @@ export default function Form() {
   const handleSubmit = () => {
     const input = document.getElementById("contact");
     const textarea = document.getElementById("message");
-    
+
     if (input.value.trim() && textarea.value.trim()) {
       // Form is valid - show success message
       setShowSuccess(true);
-      
+
       // Restore form after 3 seconds
       setTimeout(() => {
         setShowSuccess(false);
@@ -26,9 +26,8 @@ export default function Form() {
 
   if (showSuccess) {
     return (
-      <div className="flex flex-col items-center gap-4 py-8">
-        <div className="text-green text-xl">✓ Message sent!</div>
-        <div className="text-grey">Thanks for reaching out. I&apos;ll get back to you soon.</div>
+      <div className="flex py-8">
+        <div className="text-green">Success</div>
       </div>
     );
   }
