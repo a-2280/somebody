@@ -4,6 +4,19 @@ import "./globals.css";
 export const metadata = {
   title: "somebody.online",
   description: "Web development",
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '16x16', type: 'image/x-icon' },
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' }
+    ],
+    apple: '/favicon.ico',
+    other: [
+      {
+        rel: 'apple-touch-icon-precomposed',
+        url: '/favicon.ico',
+      },
+    ]
+  }
 };
 
 export default function RootLayout({ children }) {

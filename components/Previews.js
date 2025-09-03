@@ -15,8 +15,10 @@ export default function Preview() {
             loop
             muted
             playsInline
-            className="w-[600px] hidden lg:group-hover:inline absolute top-0 left-[25rem]"
+            poster="/HumanMend-Preview.jpg"
+            className="w-[600px] hidden lg:group-hover:inline absolute top-0 left-[25rem] blur-sm group-hover:blur-none transition-all duration-300"
             controls={false}
+            preload="metadata"
           >
             <source src="/humanmendPreview.mp4" type="video/mp4" />
           </video>
@@ -36,8 +38,10 @@ export default function Preview() {
             loop
             muted
             playsInline
-            className="w-[600px] hidden lg:group-hover:inline absolute top-0 left-[25rem]"
+            poster="/Lily-Preview.jpg"
+            className="w-[600px] hidden lg:group-hover:inline absolute top-0 left-[25rem] blur-sm group-hover:blur-none transition-all duration-300"
             controls={false}
+            preload="metadata"
           >
             <source src="/lilyPreview.mp4" type="video/mp4" />
           </video>
